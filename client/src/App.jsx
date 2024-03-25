@@ -1,10 +1,11 @@
 import "./App.css";
+import Header from "./components/Header/Header.jsx";
 
 function App() {
   return (
-    <>
-      <h11> hi this is food websites</h11>
-    </>
+    <div className="app">
+      <Header />
+    </div>
   );
 }
 
