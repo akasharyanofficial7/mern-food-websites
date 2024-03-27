@@ -1,0 +1,9 @@
+.food-item {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    ;
+    margin: auto;
+    transition: 0.3s;
+    border-radius: 15px;
+    animation: fadeIn 1s;
+}

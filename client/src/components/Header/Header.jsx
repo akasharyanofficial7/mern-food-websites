@@ -1,51 +1,26 @@
-import { Button, Navbar } from "flowbite-react";
-import logo from "../../assets/dish.png";
-import basket from "../../assets/basket_icon.png";
-import loupe from "../../assets/search_icon.png";
-function Header() {
-  return (
-    <Navbar className=" shadow ">
-      <Navbar.Brand href="/">
-        <img
-          src={logo}
-          className="mr-3  h-12 sm:h-12"
-          alt="Flowbite React Logo"
-        />
-        <span className="self-center whitespace-nowrap text-xl font-bold  text-yellow-600">
-          MacZooka
-        </span>
-      </Navbar.Brand>
-      <div className="flex md:order-2  gap-4 lg:gap-8">
-        <img
-          src={loupe}
-          className="mr-3   h-5 sm:h-6  mt-3 lg:mt-2 cursor-pointer"
-          alt="Flowbite React Logo"
-        />
-        <div className="flex display-flex  gap-0 h-2">
-          <span className="text-yellow-600  font-bold absolute pl-4">2</span>
-          <img
-            src={basket}
-            className="mr-3  h-5 sm:h-6  mt-3 lg:mt-2 pt-1  cursor-pointer"
-            alt="Flowbite React Logo"
-          />
-        </div>
+import React from "react";
+import "./Header.css";
 
-        <h2 className="mt-2 bg-gray-200  hover:bg-gray-300  px-3 py-1  border-2 border-yellow-500 text-gray-600 text-sm rounded-3xl cursor-pointer">
-          Sign in
-        </h2>
-        <Navbar.Toggle />
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="header-contents">
+        <h1 className=" text-5xl font-semibold">
+          Order your favourite food here
+        </h1>
+        <p className="text-white">
+          Food is not just a means of sustenance; it's a cultural cornerstone, a
+          source of joy, and a window into the soul of a community. From the
+          vibrant spices of Indian cuisine to the comforting warmth of Italian
+          pasta dishes, food reflects the diversity and richness of human
+          experience.
+        </p>
+        <button className="bg-white   hover:text-white text-gray-800 font-semibold py-2 px-4 rounded hover:bg-yellow-600">
+          Open Menu
+        </button>
       </div>
-      <Navbar.Collapse>
-        <Navbar.Link href="#" active className="nav">
-          Home
-        </Navbar.Link>
-        <Navbar.Link href="#">About</Navbar.Link>
-        <Navbar.Link href="#">Services</Navbar.Link>
-        <Navbar.Link href="#">Pricing</Navbar.Link>
-        <Navbar.Link href="#">Contact</Navbar.Link>
-      </Navbar.Collapse>
-    </Navbar>
+    </div>
   );
-}
+};
 
 export default Header;
